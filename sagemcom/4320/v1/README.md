@@ -6,7 +6,7 @@ Depends: xortool, normalize_hex, xor_decrypt, hexedit, xor_encrypt
 - Set Up new password for 'admin' and switch to manual config with new password
 - Open Browser console with press key F12, and write <code>superprivilege=1; cwmphideflag=0;</code>
 
-* After update page this variables will reset.
+Warning: After update page this variables will reset.
 
 # How to decrypt config file
 - Download current configuration from router with web configurator
@@ -28,6 +28,6 @@ or
 - Open /etc/ssh/ssh_config and enable cipher des-cbc
 - Connect to router, execute <code>$ ssh -oKexAlgorithms="+diffie-hellman-group1-sha1" superadmin@192.168.0.1</code>
 
-* Use password for superadmin from decrypted config file  
+Reference: Use password for superadmin from decrypted config file  
 
 
