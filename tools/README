@@ -1,0 +1,4 @@
+How to encrypt file:
+	1) Build: $ cc -o xor_encrypt xor_encrypt.c
+	2) Usage: $ cat source.txt | ./xor_encrypt <keyfile> > <new_encrypted_file>
+

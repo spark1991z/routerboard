@@ -1,0 +1,20 @@
+#!/bin/bash
+[ "$1" == "" ] && { 
+	echo "Usage: normalize_hex <file>"; 
+} || {
+	out="$1.hex";
+	[ -f $out ] && {
+		echo "Cleaning file $out";
+		rm $out; 
+	};
+	echo "================================";
+	cat $1 | tr "\\\x" " " | tr -s " " | cut -c 2- | tr " " "\n" |
+	while read key
+	do
+		echo -n "${key} ";
+		echo -ne \\x${key} >> $out;
+	done
+	echo "";
+	echo "================================";
+	echo "Done.";
+}
