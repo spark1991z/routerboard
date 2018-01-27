@@ -28,6 +28,6 @@ or
 - Open /etc/ssh/ssh_config and enable cipher des-cbc
 - Connect to router, execute <code>$ ssh -oKexAlgorithms="+diffie-hellman-group1-sha1" superadmin@192.168.0.1</code>
 
-Reference: Use password for superadmin from decrypted config file  
+Reference: Try use password for superadmin from decrypted config file  
 
 
