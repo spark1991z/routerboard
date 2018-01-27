@@ -6,5 +6,5 @@
 - Build, execute <code>$ sudo python setup.py install</code>
 - Usage, execute <code>$ xortool -h</code> <code>$ xortool <encrypted_file> -l <key_length> -c <char_hex></code>
 
-# Read more: https://github.com/hellman/xortool
+Read more: https://github.com/hellman/xortool
 
