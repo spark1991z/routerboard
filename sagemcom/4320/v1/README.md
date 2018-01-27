@@ -18,7 +18,7 @@ or
 # How to encrypt config file
 - Execute <code>$ cat decrypted.txt | ./xor_encrypt keyfile > new_config.cfg</code>
 
-# How to change 'admin' as (engineer) superadmin priority
+# How to change 'admin' to (engineer) superadmin priority
 - Decrypt config
 - With hexedit and searching replace <code>N="PRIORITY" V="0x2"</code> to <code>N="PRIORITY" V="0x1"</code> for 'admin'
 - Encrypt config
