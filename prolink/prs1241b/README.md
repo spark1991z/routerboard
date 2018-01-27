@@ -1,4 +1,4 @@
-# ProLink PRS1241B ADSL Wireless Modem/Router
+# ProLink PRS1241B ADSL2+ Wireless Modem/Router
 Depends: xortool, normalize_hex, xor_decrypt, xor_encrypt
 
 # How to decrypt config file
