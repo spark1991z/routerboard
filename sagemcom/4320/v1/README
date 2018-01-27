@@ -1,0 +1,36 @@
+Sagemcom F@ST4320v1 Wireless Double Band Router
+
+Depends: xortool, normalize_hex, xor_decrypt, hexedit, xor_encrypt
+--------------------------------------------------------------------------------------------
+How to get temporary (engineer) superadmin priority:
+	1) Open http://192.168.0.1 and skip Setup Wizard
+	2) Set Up new password for 'admin' and switch to manual config with new password
+	3) Open Browser console with press key F12, and write:
+		For get ( engineer ) superadmin priority: superprivilege=1
+		For configurate TR-069: cwmphideflag=0
+	Warning: After update page this variables will reset.
+--------------------------------------------------------------------------------------------
+How to decrypt config file:
+	1) Download current configuration from router with web configurator
+	2) $ xortool <MAC>.cfg -l 256 -c 22
+or
+	3) $ ./normalize_key xortool_out/<?>.txt
+	4) $ mv <MAC>.cfg encrypted.xor
+	5) $ mv xortool_out/<?>.txt.hex keyfile
+	6) $ ./xor_decrypt
+--------------------------------------------------------------------------------------------
+How to encrypt config file:
+	1) $ cat decrypted.txt | ./xor_encrypt keyfile > new_config.cfg
+--------------------------------------------------------------------------------------------
+How to change 'admin' as (engineer) superadmin priority
+	1) Decrypt config
+	2) With hexedit and searching replace <V N="PRIORITY" V="0x2"/> to <V N="PRIORITY" V="0x1"/> for 'admin'
+	3) Encrypt config
+	4) Upload into router with web configurator
+--------------------------------------------------------------------------------------------
+How to connect via SSH:
+	1) Open /etc/ssh/ssh_config and enable cipher des-cbc
+	2) Connect to router: $ ssh -oKexAlgorithms="+diffie-hellman-group1-sha1" superadmin@192.168.0.1
+--------------------------------------------------------------------------------------------
+
+
