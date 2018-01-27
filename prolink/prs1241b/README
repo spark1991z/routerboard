@@ -1,0 +1,20 @@
+ProLink PRS1241B ADSL Wireless Modem/Router
+
+Depends: xortool, normalize_hex, xor_decrypt, xor_encrypt
+--------------------------------------------------------------------------------------------
+How to decrypt config file:
+	1) $ xortool <MAC>.cfg -l 256 -c 22
+or
+	2) $ ./normalize_hex xortool_out/<?>.txt
+	3) $ mv <MAC>.cfg encrypted.xor
+	3.1) $ mv xortool_out/<?>.txt.hex keyfile
+	3.2) $ ./xor_decrypt
+
+How to encrypt config file:
+	1) $ cat decrypted.txt | xor_encrypt keyfile > new_config.cfg
+--------------------------------------------------------------------------------------------
+Read more: 
+	https://blog.fpmurphy.com/2017/02/decrypt-prolink-adsl2-modem-configuration-file-to-reveal-backdoor.html
+and screenshots:
+	https://www.phcorner.net/threads/280265/
+	
