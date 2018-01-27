@@ -20,7 +20,7 @@ or
 
 # How to change 'admin' as (engineer) superadmin priority
 - Decrypt config
-- With hexedit and searching replace <V N="PRIORITY" V="0x2"/> to <V N="PRIORITY" V="0x1"/> for 'admin'
+- With hexedit and searching replace <code><V N="PRIORITY" V="0x2"/></code> to <code><V N="PRIORITY" V="0x1"/></code> for 'admin'
 - Encrypt config
 - Upload into router with web configurator
 
