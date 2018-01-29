@@ -23,7 +23,7 @@
 ### binwalk
 ><small>Install tool
 >```bash
->$ udo apt-get install binwalk -y
+>$ sudo apt-get install binwalk -y
 >```
 >Usage
 >```bash
@@ -31,14 +31,25 @@
 >```
 ></small>
   
-## foremost
+### foremost
 ><small>Install tool
 >```bash
->$ udo apt-get install foremost -y
+>$ sudo apt-get install foremost -y
 >```
 >Usage
 >```bash
 >$ binwalk * -Q -v
+>```
+></small>
+
+### hexedit
+><small>Install tool
+>```bash
+>$ sudo apt-get install hexedit -y
+>```
+>Usage
+>```bash
+>$ hexedit <file>
 >```
 ></small>
 
