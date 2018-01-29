@@ -1,5 +1,5 @@
 # Sagemcom F@ST4320V1 Wireless Router
-__Needs tools__: xortool, xor_decrypt.py, xor_encrypt, hexedit, meld
+__Needs tools__: xortool, xor_decrypt.py, xor_encrypt, hexedit, meld, binwalk, foremost
 
 ### How to decrypt config file
 ><small>With as web configurator, download configation file.<br>With as __xortool__, decrypt it file
