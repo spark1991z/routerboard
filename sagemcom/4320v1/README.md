@@ -41,22 +41,22 @@ __Needs tools__: xortool, xor_decrypt.py, xor_encrypt, hexedit, meld
 ### How to connect via SSH
 ><small>With as text editor, open __/etc/ssh/ssh_config__, enable cipher __des-cbc__ and connect to router
 >```bash
->$ ssh -oKexAlgorithms="+diffie-hellman-group1-sha1" admin@192.168.1.1
+>$ ssh -oKexAlgorithms="+diffie-hellman-group1-sha1" superadmin@192.168.0.1
 >```
-></small>
+>__Note__: <i>You can get password from decrypted config file</i></small>
 ----
 ### How to get temporary engineer priority
-><small>Open http://192.168.0.1 and skip **Setup Wizard**<br>Switch to manual config after set new password<br>Open browser console with press key **F12** and write:
+><small>Open http://192.168.0.1 and skip __Setup Wizard__<br>Switch to manual config after set new password<br>Open browser console with press key __F12__ and write:
 >```js
 >superprivilege=1; cwmphideflag=0;
 >```
->**Warning**: <i>After update page this variables will reset.</i></small>
+>__Warning__: <i>After update page this variables will reset.</i></small>
 
 ### How to change admin priority to engineer
-><small>With as **hexedit**, replace hex data with **N="PRIORITY" V="0x2"** to **N="PRIORITY" V="0x1"**<br>Encrypt changed config and upload into router with web configurator</small></pre>
+><small>With as __hexedit__, replace hex data with __N="PRIORITY" V="0x2"__ to __N="PRIORITY" V="0x1"__<br>Encrypt changed config and upload into router with web configurator</small>
 
 ### How to extract web content from firmware file (experimentally)
-><small>Sign to folder who firmware file **firmware.bin** and with as **binwalk**, extract file
+><small>Sign to folder who firmware file __firmware.bin__ and with as __binwalk__, extract file
 >```bash
 >$ binwalk -e firmware.bin
 >```
@@ -72,10 +72,10 @@ __Needs tools__: xortool, xor_decrypt.py, xor_encrypt, hexedit, meld
 >```bash
 >$ rm *.7z
 >```
->With as **foremost**, extract web content (htm, gif, bmp, png) files
+>With as __foremost__, extract web content (htm, gif, bmp, png) files
 >```bash
 >$ foremost * -Q -v
 >```
-
+>__Note__: You can find content in __output__ folder.</small>
 
 
