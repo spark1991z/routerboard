@@ -38,7 +38,7 @@
 >```
 >Usage
 >```bash
->$ binwalk * -Q -v
+>$ foremost * -Q -v
 >```
 ></small>
 
