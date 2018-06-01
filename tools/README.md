@@ -57,5 +57,4 @@
 >```bash
 >$ python decode_zte_config.py <config.bin> <config.xml> --key <KEY>
 >```
-></small>
 >__Read more__: <i>http://4pda.ru/forum/index.php?showtopic=463323&view=findpost&p=70377332</i></small>
