@@ -53,7 +53,7 @@
 >```
 ></small>
 ### decode_zte_config
-><small>>Usage
+>Usage
 >```bash
 >$ python decode_zte_config.py <config.bin> <config.xml> --key <KEY>
 >```
