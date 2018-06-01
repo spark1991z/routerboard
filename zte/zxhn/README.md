@@ -34,7 +34,7 @@
 >ping Ping the destination.
 >>```
 
->__Note__: <i>You can get password from <b>cli_v??_pass</b> file. Where <b>v??</b> - Firmware version</i>
+>__Note__: <i>You can get password from <b>cli_v??_superadmin</b> file. Where <b>v??</b> - Firmware version</i>
   
 >Turn on privileged commands with password <b>zte</b>
 >```bash
