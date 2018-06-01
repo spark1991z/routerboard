@@ -1,0 +1,3 @@
+# ZTE ZXHN Series Wireless VoIP Router
+__Needs tools__: decode_zte_config<br>
+__Supported models__: h298a, h118n, ...
