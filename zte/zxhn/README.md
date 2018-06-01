@@ -32,7 +32,7 @@
 >enable Turn on privileged commands.
 >exit Quit from telnet.
 >ping Ping the destination.
->>```
+>```
 
 >__Note__: <i>You can get password from <b>cli_v??_superadmin</b> file. Where <b>v??</b> - Firmware version</i>
   
