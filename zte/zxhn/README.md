@@ -7,8 +7,9 @@
 ><small>With as web configurator, download configation file.<br>With as <b>decode_zte_config</b>, decrypt it file
 >```bash
 >$ chmod +x decode_zte_config.py
->$ ./decode_zte_config.py config.bin config.xml --key "m8@96&ZG3Nm7N&Iz"
+>$ ./decode_zte_config.py config.bin config.xml --key "<KEY>"
 >```
+><b>Note:</b> You can get key from file with name <b>XXX.key</b>. Where <b>XXX</b> - Router Model.
 ></small>
   
 ### How to sign in web configurator via username superadmin
