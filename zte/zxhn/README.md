@@ -7,9 +7,8 @@
 ><small>With as web configurator, download configation file.<br>With as <b>decode_zte_config</b>, decrypt it file
 >```bash
 >$ chmod +x decode_zte_config.py
->$ ./decode_zte_config.py config.bin config.xml --key <KEY>
+>$ ./decode_zte_config.py config.bin config.xml --key "m8@96&ZG3Nm7N&Iz"
 >```
->__Note__: <i>You can use key from <b>config_v??_key</b> file. Where <b>v??</b> - Firmware version</i>
 ></small>
   
 ### How to sign in web configurator via username superadmin
@@ -35,8 +34,6 @@
 >ping Ping the destination.
 >```
 
->__Note__: <i>You can get password from <b>cli_v??_superadmin</b> file. Where <b>v??</b> - Firmware version</i>
-  
 >Turn on privileged commands with password <b>zte</b>
 >```bash
 >CLI> enable
