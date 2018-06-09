@@ -6,7 +6,8 @@
 ### How to decrypt config file
 ><small>With as web configurator, download configation file.<br>With as <b>decode_zte_config</b>, decrypt it file
 >```bash
->$ python decode_zte_config.py config.bin config.xml --key <KEY>
+>$ chmod +x decode_zte_config.py
+>$ ./decode_zte_config.py config.bin config.xml --key <KEY>
 >```
 >__Note__: <i>You can use key from <b>config_v??_key</b> file. Where <b>v??</b> - Firmware version</i>
 ></small>
