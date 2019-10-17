@@ -5,6 +5,7 @@
 
 ### How to decrypt config file
 ><small>With as web configurator, download configation file if it possible.<br>With as <b>decode_zxhn_h298a_fw_vX.Y</b>, decrypt it file
+
 ><b>Note:</b> You can get manual for current script on tools page
 ></small>
   
