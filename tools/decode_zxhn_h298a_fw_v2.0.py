@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-#Use: ./zte_decrypt_config.py config.bin
+#Use: python3 decode_zxhn_h298a_fw_v2.0.py <config.bin>
 
 import sys
 import zlib
 HEADER_MAGIC = b'\x04\x03\x02\x01\x00\x00\x00\x00\x00\x00\x00\x05' 
-MODEL = "H298A"
+MODEL = b"H298A"
 ZLIB_HEADER_POS = 89
 ZLIB_HEADER_MAGIC = b'\x78\xda'
 
@@ -21,13 +21,13 @@ try:
     rlen = hlen+mlen
     data = f.read()[:rlen]
     if len(data) != rlen:
-        print("File corrupt")
+        print("File is corrupt!")
         sys.exit(1)
     if data[:hlen] != HEADER_MAGIC:
-        print("Invalid header")
+        print("Invalid header!")
         sys.exit(1)
     if  data[hlen:] != MODEL:
-        print("This file is not for "+MODEL+"! Model in config is :")
+        print("Unsupported model!")
         print(data[hlen:])
         sys.exit(1)     
     f.seek(ZLIB_HEADER_POS)
