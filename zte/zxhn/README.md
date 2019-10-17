@@ -1,22 +1,19 @@
 # ZTE ZXHN Series Wireless/VoIP Router
-<b>Needs tools</b>: decode_zte_config<br>
-<b>Supported models</b>: h298a, h118n, ...
+<b>Needs tools</b>: decode_zxhn_h298a_fw_vX.Y<br>
+<b>Supported models</b>: h298a_v1.1,h298a_v2.0, h118n, ...
 
 
 ### How to decrypt config file
-><small>With as web configurator, download configation file.<br>With as <b>decode_zte_config</b>, decrypt it file
->```bash
->$ chmod +x decode_zte_config.py
->$ ./decode_zte_config.py config.bin config.xml --key "<KEY>"
->```
-><b>Note:</b> You can get key from file with name <b>XXX.key</b>. Where <b>XXX</b> - Router Model.
+><small>With as web configurator, download configation file if it possible.<br>With as <b>decode_zxhn_h298a_fw_vX.Y</b>, decrypt it file
+><b>Note:</b> You can get manual for current script on tools page
 ></small>
   
-### How to sign in web configurator via username superadmin
->Get password from decrypted config file
+### How to sign in web configurator via any available login
+>Get password for him from decrypted config file
 
 ### How to connect via SSH
-><small>Connect to router with username <b>admin</b> and password <b>admin</b>
+><small>For example, here will used firmware v1.1.
+Connect to router with username <b>admin</b> and password <b>admin</b>
 >```bash
 >$ ssh admin@192.168.0.1
 >```

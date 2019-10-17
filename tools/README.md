@@ -52,9 +52,14 @@
 >$ hexedit <file>
 >```
 ></small>
-### decode_zte_config
+### decode_zxhn_h298a_fw_v1.1 (ROSTELECOM)
 >Usage
 >```bash
->$ python decode_zte_config.py <config.bin> <config.xml> --key <KEY>
+>$ python3 decode_zxhn_h298a_fw_v1.1.py <config.bin> <config.xml> --key <KEY>
 >```
 >__Read more__: <i>http://4pda.ru/forum/index.php?showtopic=463323&view=findpost&p=70377332</i></small>
+### decode_zxhn_h298a_fw_v2.0 (XplorNet)
+>Usage
+>```bash
+>$ python3 decode_zxhn_h298a_fw_v2.0.py <config.bin>
+>```

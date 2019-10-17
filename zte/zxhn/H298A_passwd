@@ -1,0 +1,13 @@
+--- v1.1 ---
+admin:admin
+superadmin:Zte531zTE@dsl
+superadmin:Zte531zTE@fn
+superadmin:Zte531zTE@fnXXXXX (5 last digits of SN)
+--- v2.0 ---
+user:user
+admin:adminXXXX (4 last digits of SN)
+engineering:zteXXXXXXXXXXXX (SerialNo in lowercase)
+root:public
+
+Telnet secret: zte 
+               
